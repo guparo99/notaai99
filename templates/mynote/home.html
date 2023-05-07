@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+<!-- {% load static %} -->
+
+{% block title %}Home Page{% endblock %}
+{% block page %}Mynote{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+
+  <div class="row">
+        <!-- <div class="col order-last">
+            First in DOM, ordered last
+            <i class="bi bi-alexa"></i>
+      </div> -->
+
+      <div class="col">
+        <p>
+          ¡Bienvenido/a a nuestra aplicación de notas! Aquí podrás crear tus propias notas y organizarlas en categorías personalizadas. Con nuestra herramienta, tendrás toda tu información importante en un solo lugar, y podrás acceder a ella desde cualquier dispositivo. Además, toda tu información será privada y segura, ya que solo tú tendrás acceso a ella. ¡Regístrate hoy y empieza a tomar el control de tus notas!
+        </p>
+      </div>
+      <div class="col order-first">
+        <p>
+          Welcome to our note-taking app! With our tool, you can create your own notes and organize them into custom categories. You'll have all your important information in one place and can access it from any device. Plus, your information will be private and secure, as only you will have access to it. Sign up today and start taking control of your notes!
+        </p>
+      </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+{% endblock%}
