@@ -26,7 +26,7 @@ import dj_database_url
 SECRET_KEY = 'django-insecure-n-9gwvd_%cxsv67up@!$v%#e^lhvvz6o=s7*c69wte3!7vs3!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -87,16 +87,7 @@ WSGI_APPLICATION = 'noteai.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycoop2',
-#         'NAME':'noteai',
-#         'USER':'postgres',
-#         'PASSWORD':'aa090895',
-#         'HOST': '127.0.0.2',
-#         'DATABASE_PORT': '5432'
-#     }
-# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
