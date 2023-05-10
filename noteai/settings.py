@@ -82,20 +82,21 @@ WSGI_APPLICATION = 'noteai.wsgi.application'
 
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'localhost',  # O la dirección IP del servidor PostgreSQL
-        'PORT': '5432',  # El puerto por defecto de PostgreSQL
-        'NAME': 'noteai',
-        'USER': 'postgres',
-        'PASSWORD': 'aa090895',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'HOST': 'localhost',  # O la dirección IP del servidor PostgreSQL
+#         'PORT': '5432',  # El puerto por defecto de PostgreSQL
+#         'NAME': 'noteai',
+#         'USER': 'postgres',
+#         'PASSWORD': 'aa090895',
+#     }
+# }
 
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgres://<eqzrcnexsgapcx>:<postgres://eqzrcnexsgapcx:8359c86320961ebe8891d454a25add4a6ced8f15986ba8819b966318649260d8@ec2-3-217-146-37.compute-1.amazonaws.com:5432/d22kd2uoui52rl>@<ec2-3-217-146-37.compute-1.amazonaws.com>/<dd22kd2uoui52rl>')
+    'default': dj_database_url.config(default='postgres://eqzrcnexsgapcx:8359c86320961ebe8891d454a25add4a6ced8f15986ba8819b966318649260d8@ec2-3-217-146-37.compute-1.amazonaws.com:5432/d22kd2uoui52rl
+')
 }
 
 
