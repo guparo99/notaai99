@@ -18,7 +18,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 #    deploy
 # from deccouple import config
+
 import dj_database_url
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -26,7 +28,7 @@ import dj_database_url
 SECRET_KEY = 'django-insecure-n-9gwvd_%cxsv67up@!$v%#e^lhvvz6o=s7*c69wte3!7vs3!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = false
 
 ALLOWED_HOSTS = ['*']
 
@@ -77,15 +79,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'noteai.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 
 DATABASES = {
@@ -100,11 +94,11 @@ DATABASES = {
 }
 
 
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default=config('DATABASE_URL')
-#     )
-# }
+DATABASES = {
+    'default': dj_database_url.config(default='postgres://<eqzrcnexsgapcx>:<postgres://eqzrcnexsgapcx:8359c86320961ebe8891d454a25add4a6ced8f15986ba8819b966318649260d8@ec2-3-217-146-37.compute-1.amazonaws.com:5432/d22kd2uoui52rl>@<ec2-3-217-146-37.compute-1.amazonaws.com>/<dd22kd2uoui52rl>')
+}
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
